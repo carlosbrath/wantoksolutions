@@ -37,8 +37,8 @@ class Welcome extends CI_Controller {
             // Add other client data here
         ];
 
-        echo '<pre>';
-        print_r($requestData);die;
+        // echo '<pre>';
+        // print_r($requestData);die;
         // Make an HTTP POST request to WHMCS API
         $client = new Client();
         $response = $client->post($apiUrl, ['form_params' => $requestData]);
