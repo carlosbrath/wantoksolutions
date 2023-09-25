@@ -7,53 +7,81 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		phpinfo();
+		$this->load->library('whmcs');
+		echo $this->whmcs->teste_whmcs(array('nothong to passs'));
+		die;
 		$this->load->view('welcome_message');
 	}
 	public function addClientToWHMCS() {
-        // WHMCS API URL
-        $apiUrl = 'https://wantoksolutions.com.pg/whmcs/includes/api.php';
-        
-        // WHMCS API Credentials
-        $apiIdentifier = 'PelmDUkS0xjaKbgyX3hUh7qT6ekiDVhj';
-        $apiSecret = '09ov91RnT7Cxz8ETj0JgxDR8OAWhLMl0';
-        
-        // Client Data
-        $clientData = [
-            'firstname' => 'John',
-            'lastname' => 'Doe',
+		$clientData = [
+            'firstname' => 'Mk',
+            'lastname' => 'Khan',
             'email' => 'johndoe@example.com',
+            'address1' => 'House # 457-K, Street # 58, Sector I-8/3,Islamabad.',
+            'city' => 'Islamabad',
+            'state' => 'Pakisatan',
+            'postcode' => '44090',
+            'country' => 'pk',
+            'phonenumber' => '03434444444',
+            'password2' => 'password',
             // Add other client details as needed
         ];
-    
-        // Prepare API request parameters
-        $requestData = [
-            'identifier' => $apiIdentifier,
-            'secret' => $apiSecret,
-            'action' => 'AddClient', // WHMCS API action for adding a client
-            'firstname' => $clientData['firstname'],
-            'lastname' => $clientData['lastname'],
-            'email' => $clientData['email'],
-            // Add other client data here
-        ];
+		// print_r($clientData);die;
+		$response= $this->whmcs->add_client($clientData);
+		print_r($response);
 
-        // echo '<pre>';
-        // print_r($requestData);die;
-        // Make an HTTP POST request to WHMCS API
-        $client = new Client();
-        $response = $client->post($apiUrl, ['form_params' => $requestData]);
-    
-        // Process the API response
-        $responseData = json_decode($response->getBody(), true);
-        // $responseData = '';
-    
-    
-        if ($responseData && $responseData['result'] == 'success') {
-            // Client successfully added to WHMCS
-            echo 'Client added successfully.';
-        } else {
-            // Handle API error
-            echo 'Error adding client: ' . $responseData['message'];
-        }
     }
+	public function AddUser() {
+		// WHMCS API Credentials
+        $apiIdentifier = 'PelmDUkS0xjaKbgyX3hUh7qT6ekiDVhj';
+        $apiSecret = '09ov91RnT7Cxz8ETj0JgxDR8OAWhLMl0';
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, 'https://wantoksolutions.com.pg/whmcs/includes/api.php');
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS,
+			http_build_query(
+				array(
+					'action' => 'AddUser',
+					// See https://developers.whmcs.com/api/authentication
+					'username' => $apiIdentifier,
+					'password' => $apiSecret,
+					'firstname' => 'John',
+					'lastname' => 'Doe',
+					'email' => 'john.doe@example.com',
+					'password2' => 'password',
+					'responsetype' => 'json',
+				)
+			)
+		);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		$response = curl_exec($ch);
+		print_r($response);
+		curl_close($ch);
+	}
+	function authenticating() {
+		// WHMCS API Credentials
+        $apiIdentifier = 'PelmDUkS0xjaKbgyX3hUh7qT6ekiDVhj';
+        $apiSecret = '09ov91RnT7Cxz8ETj0JgxDR8OAWhLMl0';
+		$username = "your_admin_login_username";
+		$password = "your_admin_login_password";
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, 'https://wantoksolutions.com.pg/whmcs/includes/api.php');
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS,
+			http_build_query(
+				array(
+					'action' => 'AddUser',
+					// See https://developers.whmcs.com/api/authentication
+					'username' => $username,
+					'password' => md5($password),
+					
+					'responsetype' => 'json',
+				)
+			)
+		);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		$response = curl_exec($ch);
+		print_r($response);
+		curl_close($ch);
+	}	
 }
