@@ -1,10 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-require 'vendor/autoload.php';
 
-use GuzzleHttp\Client;
-
-class MainController extends CI_Controller
+class MainController extends MY_Controller
 {
 
     function __construct()
