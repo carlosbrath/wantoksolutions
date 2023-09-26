@@ -7,9 +7,10 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->library('whmcs');
 		echo $this->whmcs->teste_whmcs(array('nothong to passs'));
+		echo base_url();
 		die;
+
 		$this->load->view('welcome_message');
 	}
 	public function addClientToWHMCS() {
@@ -27,7 +28,7 @@ class Welcome extends CI_Controller {
             // Add other client details as needed
         ];
 		// print_r($clientData);die;
-		$response= $this->whmcs->add_client($clientData);
+		$response= $this->Whmcs->add_client($clientData);
 		print_r($response);
 
     }
