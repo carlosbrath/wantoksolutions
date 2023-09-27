@@ -17,7 +17,7 @@ class RequestController extends MY_Controller
     }
     function domain_whois() {
         $params= array(
-            'domain'=>'radosolos',
+            'domain'=>'radosolos.com',
         );
         $response= $this->whmcs->domain_whois($params);
         print_r($response);
