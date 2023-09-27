@@ -23,7 +23,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+
+function getSiteURL()
+{
+	$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+	$domainName = $_SERVER['HTTP_HOST'] . '/';
+	return $protocol . $domainName;
+}
 if ($_SERVER['HTTP_HOST'] == "localhost") {
+	getSiteURL();
 	$config['base_url'] = "http://localhost/wantoksolutions/";
 } else {
 	$config['base_url'] = getSiteURL();

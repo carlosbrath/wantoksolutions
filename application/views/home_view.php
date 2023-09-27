@@ -9,9 +9,9 @@
                                 <h2 class="home-title text-white">We’re Help To Build Your Dream Project</h2>
                                 <p class="home-desc mx-auto mt-3 text-white-50">Provides a full service range including Web hosting, UI/UX Design, Development.</p>
                                 <div class="text-center subcribe-form mt-5">
-                                    <form action="#">
-                                        <input type="text" placeholder="Find Your Perfect Domain">
-                                        <button type="submit" class="btn btn-custom">Subcribe</button>
+                                    <form action="https://wantoksolutions.com.pg/whmcs/cart.php?a=add&domain=register" method="post">
+                                        <input type="text" name="query" id="query" placeholder="Find Your Perfect Domain">
+                                        <button type="submit" class="btn btn-custom">GO</button>
                                     </form>
                                 </div>
                             </div>

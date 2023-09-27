@@ -17,4 +17,11 @@ class MainController extends MY_Controller
 		$this->load->view('template2023', $var);
 
     }
+    function login() {
+        $data['title'] = 'Login';
+		$data['page_name'] = 'Login';
+
+		$var['content'] = $this->load->view('login_view', $data, true);
+		$this->load->view('template_blank', $var);
+    }
 }
