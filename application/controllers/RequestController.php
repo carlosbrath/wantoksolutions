@@ -10,18 +10,16 @@ class RequestController extends MY_Controller
     }
     function domain_pricing() {
         $params= array(
-            'domainid'=>'1',
             'domain'=>'radosolos',
         );
         $response= $this->whmcs->whmcs_domain_pricing();
         print_r($response);
     }
-    function domain_register() {
+    function domain_whois() {
         $params= array(
-            'domainid'=>'1',
             'domain'=>'radosolos',
         );
-        $response= $this->whmcs->domain_register($params);
+        $response= $this->whmcs->domain_whois($params);
         print_r($response);
     }
 }

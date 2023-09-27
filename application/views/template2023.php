@@ -3,7 +3,7 @@
     <head>
 		<meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Oxavia - Responsive One Page HTML5 Template</title>
+	    <title><?=$title ?> | wantoksolutions</title>
 	    <meta name="description" content="" />
 	    <meta name="keywords" content="" />
         <meta name="author" content="MyraStudio" />
