@@ -10,9 +10,9 @@ class RequestController extends MY_Controller
     }
     function domain_pricing() {
         $params= array(
-            'domain'=>'radosolos',
+            'currencyid'=>'',
         );
-        $response= $this->whmcs->whmcs_domain_pricing();
+        $response= $this->whmcs->domain_pricing($params);
         print_r($response);
     }
     function domain_whois() {

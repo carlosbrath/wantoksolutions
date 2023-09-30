@@ -6,12 +6,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 text-center">
-                                <h2 class="home-title text-white">We’re Help To Build Your Dream Project</h2>
+                                <h2 class="home-title text-white">We Help To Build Your Dream Project</h2>
                                 <p class="home-desc mx-auto mt-3 text-white-50">Provides a full service range including Web hosting, UI/UX Design, Development.</p>
-                                <div class="text-center subcribe-form mt-5">
-                                    <form action="https://wantoksolutions.com.pg/whmcs/cart.php?a=add&domain=register" method="post">
+                                <div class="text-left subcribe-form mt-5">
+                                    <form action="<?=base_url();?>search-domain" method="post">
                                         <input type="text" name="query" id="query" placeholder="Find Your Perfect Domain">
-                                        <button type="submit" class="btn btn-custom">GO</button>
+                                        <button type="submit" class="btn btn-custom">Search Domain</button>
                                     </form>
                                 </div>
                             </div>
@@ -446,7 +446,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row mt-4">
                     <div class="col-lg-8 offset-md-2">
                         <div class="d-flex">

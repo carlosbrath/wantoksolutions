@@ -422,7 +422,7 @@ p{
 
 .subcribe-form input {
     padding: 14px 20px;
-    width: 100%;
+    width: 83%;
     font-size: 17px;
     color: #4c5667 !important;
     border: none;
@@ -435,17 +435,17 @@ p{
 
 .subcribe-form button {
     position: absolute;
-    top: 3px;
+    top: 1px;
     right: 3px;
     outline: none !important;
     border-radius: 5px;
     font-size: 14px;
-    padding: 12px 30px;
+    padding: 15px 7px;
 }
 
 .subcribe-form form {
     position: relative;
-    max-width: 600px;
+    max-width: 90%;
     margin: 0px auto;
 }
 
@@ -877,6 +877,7 @@ p{
     border: 1px solid var(--primary-border);
 }
 
+
 /************************
        12. CONTACT
 **************************/
@@ -1007,6 +1008,15 @@ textarea.form-control {
     color: #818d9c!important;
 }
 
+/************************
+       12. DOMAIN
+**************************/
+.domain {
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    border: 1px solid var(--active-text);
+}
+
 /* ---------------Flex Prophety---------------- */
 .d-flex.justify-between {
     justify-content: space-between;
@@ -1086,6 +1096,12 @@ textarea.form-control {
     color: #fff !important;
     background: transparent;
     border: 1px solid #6c757d;
+  }
+  .text-overline{
+    text-decoration: overline;
+  }
+  .line-through{
+    text-decoration: line-through;
   }
 
 /************************
