@@ -37,88 +37,94 @@
 
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <div class="price bg-dark mt-4 p-5">
+                    <div class="price pricing-card bg-dark mt-4 p-5">
                         <div class="item">
                             <div class="type pb-3">
-                                <h4>Consultation</h4>
+                                <h4>Basic</h4>
                             </div>
-
                             <div class="value">
-                                <h5>FREE</h5>
+                                <h5>$1.99/mo</h5>
+                            </div>
+                            <div>
+                                <a href="https://wantoksolutions.com.pg/whmcs/index.php?rp=/store/shared-hostin/basic" class="btn btn-custom">Order Now</a>
                             </div>
                             <div class="sub-heading">
-                                <p>Your digital marketing efforts, instead of handling in-house.</p>
+                                <p>Ideal solution for beginners.</p>
                             </div>
                             <div class="feature">
                                 <ul class="list-bulets text-light">
-                                    <li>Brand Design</li>
-                                    <li>Market Analysis</li>
-                                    <li>Production</li>
+                                    <li>512 MB RAM</li>
+                                    <li>1 Website</li>
+                                    <li>10 GB Storage</li>
+                                    <li>1 Database</li>
+                                    <li>Unmetered bandwidth</li>
+                                    <li>daily Backups</li>
+                                    <li>Free 1 click Install</li>
                                 </ul>
-                            </div>
-
-                            <div>
-                                <a href="#" class="btn btn-custom">Order Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="price bg-dark mt-4 p-5">
+                    <div class="price pricing-card bg-dark mt-4 p-5">
                         <div class="item">
                             <div class="type pb-3">
-                                <h4>Design</h4>
+                                <h4>Premium</h4>
                             </div>
-
                             <div class="value">
-                                <h5>$2900</h5>
+                                <h5>$2.99/mo</h5>
+                            </div>
+                            <div>
+                                <a href="https://wantoksolutions.com.pg/whmcs/index.php?rp=/store/shared-hostin/premium" class="btn btn-custom">Order Now</a>
                             </div>
                             <div class="sub-heading">
-                                <p>Provide your business with a variety of digital solutions to promote.</p>
+                                <p>Everything you need to create your website</p>
                             </div>
                             <div class="feature">
                                 <ul class="list-bulets text-light">
-                                    <li>Brand Design</li>
-                                    <li>Market Analysis</li>
-                                    <li>Production</li>
+                                    <li>100 Websites</li>
+                                    <li>Standard Performance</li>
+                                    <li>100 GB SSD Storage</li>
+                                    <li>Unlimited Free SSL</li>
+                                    <li>Unmetered bandwidth</li>
+                                    <li>Unlimited Bandwidth</li>
+                                    <li>Free Email</li>
+                                    <li>Free Domain</li>
                                 </ul>
-                            </div>
-
-                            <div>
-                                <a href="#" class="btn btn-custom">Order Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="price bg-dark mt-4 p-5">
+                    <div class="price pricing-card bg-dark mt-4 p-5">
                         <div class="item">
                             <div class="type pb-3">
-                                <h4>Design + Code</h4>
+                                <h4>Business</h4>
                             </div>
-
                             <div class="value">
-                                <h5>$2900</h5>
+                                <h5>$3.99/mo</h5>
+                            </div>
+                            <div>
+                                <a href="https://wantoksolutions.com.pg/whmcs/index.php?rp=/store/shared-hostin/business" class="btn btn-custom">Order Now</a>
                             </div>
                             <div class="sub-heading">
-                                <p>Your digital marketing efforts, instead of handling in-house.</p>
+                                <p>Level-up with more power and enhanced features</p>
                             </div>
                             <div class="feature">
                                 <ul class="list-bulets text-light">
-                                    <li>Brand Design</li>
-                                    <li>Market Analysis</li>
-                                    <li>Production</li>
+                                    <li>Increased (Up to 5x) Performance</li>
+                                    <li>100 Websites</li>
+                                    <li>200 GB NVMe Storage</li>
+                                    <li>Unlimited Free SSL</li>
+                                    <li>Unlimited Bandwidth</li>
+                                    <li>daily Backups</li>
+                                    <li>Free Email</li>
+                                    <li>Free CDN</li>
                                 </ul>
-                            </div>
-
-                            <div>
-                                <a href="#" class="btn btn-custom">Order Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                
             </div>
         </div>
         </section>

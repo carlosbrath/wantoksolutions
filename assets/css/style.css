@@ -833,6 +833,9 @@ p{
     border-radius: 12px;
     border: 1px solid #5c5858;
 }
+.pricing-card{
+    height: 112vh;
+}
 
 .price .type h4 {
     font-size: 18px;

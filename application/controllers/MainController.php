@@ -28,15 +28,20 @@ class MainController extends MY_Controller
     {
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
             $params = array(
-                'domain' => $this->input->post('query'),
+                'domain' => $this->input->post('query').'.com',
             );
             $response = $this->whmcs->domain_whois($params);
-            if ($response['status'] == 'available') {
-                $params = array(
-                    'currencyid' => '',
-                );
-                $response = $this->whmcs->domain_pricing($params);
-                $data['pricing']= $response['pricing'];
+            if($response['result']=='success'){
+                if ($response['status'] == 'available') {
+                    $params = array(
+                        'currencyid' => '',
+                    );
+                    $response = $this->whmcs->domain_pricing($params);
+                    $data['pricing']= $response['pricing'];
+                    $data['currency']= $response['currency'];
+                } else{
+                    $data['status']='unavailable';
+                }
             }
             $data['title'] = 'Domain Serach';
             $data['page_name'] = 'Domain Serach';
