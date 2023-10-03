@@ -22,4 +22,10 @@ class RequestController extends MY_Controller
         $response= $this->whmcs->domain_whois($params);
         print_r($response);
     }
+    function get_currencies() {
+        $params =array(
+        );
+        $response= $this->whmcs->get_currencies($params);
+        print_r($response);
+    }
 }

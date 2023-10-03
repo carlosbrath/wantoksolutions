@@ -55,4 +55,12 @@ class MainController extends MY_Controller
             $this->load->view('template2023', $var);
         }
     }
+    function our_services()
+    {
+        $data['title'] = 'Services';
+        $data['page_name'] = 'Services';
+
+        $var['content'] = $this->load->view('our_services_view', $data, true);
+        $this->load->view('template_blank', $var);
+    }
 }
