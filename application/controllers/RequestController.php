@@ -32,6 +32,14 @@ class RequestController extends MY_Controller
         $params =array(
         );
         $response= $this->whmcs->get_activity_log($params);
+        echo '<pre>';
+        print_r($response);
+    }
+    function get_admin_details() {
+        $params =array(
+        );
+        $response= $this->whmcs->get_admin_details($params);
+        echo '<pre>';
         print_r($response);
     }
 }
