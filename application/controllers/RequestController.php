@@ -28,4 +28,10 @@ class RequestController extends MY_Controller
         $response= $this->whmcs->get_currencies($params);
         print_r($response);
     }
+    function get_activity_log() {
+        $params =array(
+        );
+        $response= $this->whmcs->get_activity_log($params);
+        print_r($response);
+    }
 }
