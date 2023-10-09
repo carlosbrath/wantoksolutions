@@ -53,5 +53,6 @@ $route['default_controller'] = 'MainController';
 $route['login'] = 'MainController/login';
 $route['search-domain'] = 'MainController/search_domain';
 $route['our-services'] = 'MainController/our_services';
+$route['web-development'] = 'MainController/web_development';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

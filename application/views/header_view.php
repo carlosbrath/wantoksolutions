@@ -13,7 +13,7 @@
                             <a class="nav-link" href="<?=base_url();?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?=base_url('portfolio');?>">Portfolio</a>
+                            <a class="nav-link" href="<?=base_url('our-services');?>">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#client">Clients</a>
@@ -29,6 +29,7 @@
                         </li>
 			        </ul>
                     <ul class="navbar-nav ml-auto">
+                        
                         <a class="btn btn-header" >Get IN TOUCH</a>
                     </ul>
 			    </div>

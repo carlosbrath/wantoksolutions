@@ -13,6 +13,12 @@ class MainController extends MY_Controller
         $data['title'] = 'Home';
         $data['page_name'] = 'Home';
 
+        // $params =array(
+            
+        // );
+        // $response= $this->whmcs->get_products($params);
+        // $data['products']=$response['']['product'];
+
         $var['content'] = $this->load->view('home_view', $data, true);
         $this->load->view('template2023', $var);
     }
@@ -61,6 +67,14 @@ class MainController extends MY_Controller
         $data['page_name'] = 'Services';
 
         $var['content'] = $this->load->view('our_services_view', $data, true);
-        $this->load->view('template_blank', $var);
+        $this->load->view('template2023', $var);
+    }
+    function web_development()
+    {
+        $data['title'] = 'Services';
+        $data['page_name'] = 'Services';
+
+        $var['content'] = $this->load->view('web_development_view', $data, true);
+        $this->load->view('template2023', $var);
     }
 }

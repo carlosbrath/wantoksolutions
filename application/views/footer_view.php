@@ -23,8 +23,8 @@
                         <div class="footer-menu">
                             <h5 class="mb-4 text-uppercase">Category</h5>
                             <ul class="text-muted list-unstyled">
-                                <li><a href="#">First Link</a></li>
-                                <li><a href="#">Secon Link</a></li>
+                                <li><a href="<?=base_url('our-services');?>">Services</a></li>
+                                <li><a href="#">Second Link</a></li>
                                 <li><a href="#">Third Link</a></li>
                                 <li><a href="#">Fourth Link</a></li>
                                 <li><a href="#">Fifth Link</a></li>
@@ -36,7 +36,7 @@
                             <h5 class="mb-4 text-uppercase">Category</h5>
                             <ul class="text-muted list-unstyled">
                                 <li><a href="#">First Link</a></li>
-                                <li><a href="#">Secon Link</a></li>
+                                <li><a href="#">Second Link</a></li>
                                 <li><a href="#">Third Link</a></li>
                                 <li><a href="#">Fourth Link</a></li>
                                 <li><a href="#">Fifth Link</a></li>

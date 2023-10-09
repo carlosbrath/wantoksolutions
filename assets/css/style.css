@@ -276,7 +276,8 @@ p{
 .section-header span {
     position: absolute;
     top: 20px;
-    color: rgb(255 255 255 / 6%);
+    color: #1c1b1b;
+    -webkit-text-stroke: 1px #5E5E5E;
     left: 0;
     right: 0;
     z-index: 1;
@@ -324,8 +325,10 @@ p{
 
 .title-heading {
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: 2rem;
     letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
 }
 
 .title h1{
@@ -1107,6 +1110,46 @@ textarea.form-control {
   .line-through{
     text-decoration: line-through;
   }
+
+  /************************
+    14. Our Services
+    **************************/
+    .services-box {
+        height: 363px;
+        box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        border: 1px solid #5c5858;
+    }
+    .services-box .item-footer {
+        border-top: 1px solid rgb(219 213 213 / 13%);
+        margin-top: 130px;
+        color: #726e6e;
+        padding-top: 10px;
+    }
+    .services-box .type h4 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: var(--primary-text);
+    }
+    .btn-box {
+        font-size: 12px;
+        width: 100% !important;
+        padding: 8px 7px;
+        border-radius: 20px;
+        transition: all 0.4s;
+        color: #fff !important;
+        background: linear-gradient(#00FE8A, #0098F7);
+
+    }
+    .text-active {
+        color: var(--active-text);
+    }
+    .box-image img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+    }
 
 /************************
     14. RESPONSIVE
