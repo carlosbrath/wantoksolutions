@@ -821,6 +821,16 @@ p{
 .read-btn:hover {
     color: #f70033;
 }
+.project-box {
+    border: 2px solid #02e17b;
+    border-radius: 15px;
+}
+.prject-des .title-heading {
+    font-size: 1.2rem ;
+}
+.prject-des .text-shadow {
+    font-size: 28px ;
+}
 
 
 /***********************
