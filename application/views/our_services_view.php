@@ -28,7 +28,7 @@
                             </div>
                         </div>
                         <div class="item-footer d-flex justify-between">
-                            <a href="<?=base_url('web-development');?>" class="btn btn-box">Select</a>
+                            <a href="<?=base_url('services/web-development');?>" class="btn btn-box">Select</a>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                             </div>
                         </div>
                         <div class="item-footer d-flex justify-between">
-                            <a href="#" class="btn btn-box">Select</a>
+                            <a href="<?=base_url('services/app-development');?>" class="btn btn-box">Select</a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="item-footer d-flex justify-between">
-                            <a href="#" class="btn btn-box">Select</a>
+                            <a href="<?=base_url('services/social-media');?>" class="btn btn-box">Select</a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         <div class="item-footer d-flex justify-between">
-                            <a href="#" class="btn btn-box">Select</a>
+                            <a href="<?=base_url('services/seo-optimization');?>" class="btn btn-box">Select</a>
                         </div>
                     </div>
                 </div>

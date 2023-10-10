@@ -206,6 +206,7 @@ p{
     text-transform: uppercase;
 }
 
+
 .navbar-custom .navbar-nav .nav-link {
     padding-right: 0px;
     padding-left: 0px;
@@ -329,6 +330,18 @@ p{
     letter-spacing: 1px;
     position: relative;
     z-index: 2;
+    position: relative;
+    display: inline;
+}
+.title-heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; /* Adjust this value to determine how much of the text the underline covers */
+    height: 4px; /* Customize the underline height as needed */
+    background-color: var(--active-text); /* Custom color (#FF5733) */
 }
 
 .title h1{
@@ -1149,6 +1162,22 @@ textarea.form-control {
         max-height: 100%;
         height: auto;
         width: auto;
+    }
+    .steps .number-shadow {
+    
+        color: #1c1b1b;
+        -webkit-text-stroke: 1px #5E5E5E;
+        font-weight: 700;
+        letter-spacing: 15px;
+        font-size: 32px;
+        text-transform: uppercase;
+        line-height: 0;
+
+    }
+    .steps .text-step {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 
 /************************

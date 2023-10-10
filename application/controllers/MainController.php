@@ -69,12 +69,20 @@ class MainController extends MY_Controller
         $var['content'] = $this->load->view('our_services_view', $data, true);
         $this->load->view('template2023', $var);
     }
-    function web_development()
+    function services_details($slug)
     {
-        $data['title'] = 'Services';
-        $data['page_name'] = 'Services';
+        $data['title'] = 'Services Details';
+        $data['page_name'] = 'Services details';
 
-        $var['content'] = $this->load->view('web_development_view', $data, true);
+        $var['content'] = $this->load->view('services/'.$slug, $data, true);
+        $this->load->view('template2023', $var);
+    }
+    function projects_details($slug)
+    {
+        $data['title'] = 'Projects Details';
+        $data['page_name'] = 'Projects Details';
+
+        $var['content'] = $this->load->view('projects/'.$slug, $data, true);
         $this->load->view('template2023', $var);
     }
 }
