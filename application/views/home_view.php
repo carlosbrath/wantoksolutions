@@ -441,7 +441,7 @@
         <!--On Services END -->
 
         <!-- CLIENTS START -->
-        <section class="section bg-dark" id="service">
+        <section class="section bg-dark" id="testimonial">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
@@ -454,7 +454,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-lg-8 offset-md-2">
-                        <div class="d-flex">
+                        <div class="d-flex md-block">
                             <div class="services-blog bg-dark  mt-4">
                                 <div class="star-rating">
                                     <span class="star">&#9733;</span>
@@ -496,7 +496,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex md-block">
                             <div class="services-blog bg-dark ">
                                 <div class="star-rating">
                                     <span class="star">&#9733;</span>

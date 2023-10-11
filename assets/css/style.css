@@ -1230,6 +1230,39 @@ textarea.form-control {
     .clients-img {
         display: none;
     }
+    .btn-header {
+        width: 100%;
+    }
+    .title-heading {
+        font-size: 1rem;
+    }
+    .section-header span {
+        font-size: 16px;
+        top: 10px;
+        font-weight: 300;
+        letter-spacing: 12px;
+    }
+    .logo {
+        width: 50%;
+    }
+    
+     .md-block {
+        display: block !important;
+    }
+    .home-title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .subcribe-form button {
+        font-size: 7px;
+        padding: 14px 7px;
+    }
+    .subcribe-form input { 
+        padding-right: 0px;
+        padding-left: 0px;
+        padding: 9px 4px;
+        font-size: 16px;
+    }
     
 }
 
