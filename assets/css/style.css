@@ -283,7 +283,7 @@ p{
     right: 0;
     z-index: 1;
     font-weight: 700;
-    letter-spacing: 15px;
+    letter-spacing: 3px;
     font-size: 50px;
     text-transform: uppercase;
     line-height: 0;
@@ -1185,13 +1185,37 @@ textarea.form-control {
 
     }
     .steps .text-step {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         letter-spacing: 1px;
+        text-transform: uppercase;
     }
 
 /************************
-    14. RESPONSIVE
+    15. About Us
+**************************/ 
+.founder-img {
+    margin: 10px 20px;
+    padding: 10px 20px;
+}   
+.founder-img img {
+    width: 100%;
+}
+.quotes-words {
+    margin: 35px 0px 29px;
+    padding-left: 0px;
+}
+.center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .d-j-flex {
+    display: flex!important;
+    justify-content: space-around;
+}
+/************************
+    16. RESPONSIVE
 **************************/
 
 @media (max-width: 992px) {

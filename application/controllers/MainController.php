@@ -30,6 +30,14 @@ class MainController extends MY_Controller
         $var['content'] = $this->load->view('login_view', $data, true);
         $this->load->view('template_blank', $var);
     }
+    function about_us()
+    {
+        $data['title'] = 'Projects Details';
+        $data['page_name'] = 'Projects Details';
+
+        $var['content'] = $this->load->view('about_us_view', $data, true);
+        $this->load->view('template2023', $var);
+    }
     function search_domain()
     {
         if ($this->input->server('REQUEST_METHOD') === 'POST') {

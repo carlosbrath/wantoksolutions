@@ -25,7 +25,7 @@
                             <a class="nav-link" href="#features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about-us">About Us</a>
+                            <a class="nav-link" href="<?=base_url('about-us');?>">About Us</a>
                         </li>
 			        </ul>
                     <ul class="navbar-nav ml-auto">

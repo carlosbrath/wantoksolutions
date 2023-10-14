@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'MainController';
 $route['login'] = 'MainController/login';
 $route['search-domain'] = 'MainController/search_domain';
+$route['about-us'] = 'MainController/about_us';
 $route['our-services'] = 'MainController/our_services';
 $route['services/(:any)'] = 'MainController/services_details/$1';
 $route['projects/(:any)'] = 'MainController/projects_details/$1';
