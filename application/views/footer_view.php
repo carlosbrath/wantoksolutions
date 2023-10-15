@@ -18,7 +18,18 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-lg-2">
+                        <div class="footer-menu">
+                            <h5 class="mb-4 text-uppercase">Category</h5>
+                            <ul class="text-muted list-unstyled">
+                                <li><a href="<?=base_url('projects/project-list');?>">About Us</a></li>
+                                <!-- <li><a href="#">Secon Link</a></li>
+                                <li><a href="#">Third Link</a></li>
+                                <li><a href="#">Fourth Link</a></li>
+                                <li><a href="#">Fifth Link</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
                     <div class="col-lg-2">
                         <div class="footer-menu">
                             <h5 class="mb-4 text-uppercase">Services</h5>
@@ -37,21 +48,6 @@
                             <ul class="text-muted list-unstyled">
                                 <li><a href="<?=base_url('projects/project-list');?>">Project List</a></li>
                                 <li><a href="<?=base_url('projects/gig-qatar');?>">Gig Qatar project</a></li>
-                                <li><a href="#">Third Link</a></li>
-                                <li><a href="#">Fourth Link</a></li>
-                                <li><a href="#">Fifth Link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="footer-menu">
-                            <h5 class="mb-4 text-uppercase">Category</h5>
-                            <ul class="text-muted list-unstyled">
-                                <li><a href="#">First Link</a></li>
-                                <li><a href="#">Secon Link</a></li>
-                                <li><a href="#">Third Link</a></li>
-                                <li><a href="#">Fourth Link</a></li>
-                                <li><a href="#">Fifth Link</a></li>
                             </ul>
                         </div>
                     </div>

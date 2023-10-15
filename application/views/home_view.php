@@ -441,7 +441,7 @@
         <!--On Services END -->
 
         <!-- CLIENTS START -->
-        <section class="section bg-dark" id="testimonial">
+        <section class="section bg-dark" id="clients">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">

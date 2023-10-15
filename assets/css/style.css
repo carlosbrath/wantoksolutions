@@ -1300,4 +1300,7 @@ textarea.form-control {
     .clients-img {
         top: 7px;
     }
+    .pricing-card {
+        height: auto;
+    }
 }

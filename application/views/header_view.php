@@ -16,7 +16,7 @@
                             <a class="nav-link" href="<?=base_url('our-services');?>">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#client">Clients</a>
+                            <a class="nav-link" href="#clients">Clients</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#price">Pricing</a>
