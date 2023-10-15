@@ -15,7 +15,7 @@
                                         <form method="post" action="https://wantoksolutions.com.pg/whmcs/dologin.php">
                                             <div class="form-group">
                                                 <label for="email">Email</label>
-                                                <input type="text" class="form-control" id="username" name="username" placeholder="info@wantosol.com">
+                                                <input type="text" class="form-control" id="username" name="username" placeholder="info@wantoksolutions.com">
                                             </div>
                                             <div class="form-group">
                                                 <label for="password">Password</label>

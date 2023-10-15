@@ -1287,6 +1287,12 @@ textarea.form-control {
         padding: 9px 4px;
         font-size: 16px;
     }
+    .clients-img {
+        top: 7px;
+    }
+    .pricing-card {
+        height: auto;
+    }
     
 }
 
@@ -1297,10 +1303,5 @@ textarea.form-control {
 }
 
 @media (max-height: 767px) {
-    .clients-img {
-        top: 7px;
-    }
-    .pricing-card {
-        height: auto;
-    }
+   
 }

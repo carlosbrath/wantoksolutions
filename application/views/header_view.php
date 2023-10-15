@@ -21,11 +21,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#price">Pricing</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="<?=base_url('about-us');?>">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?=base_url('login');?>">Login</a>
                         </li>
 			        </ul>
                     <ul class="navbar-nav ml-auto">
