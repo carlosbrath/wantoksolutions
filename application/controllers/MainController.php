@@ -24,11 +24,23 @@ class MainController extends MY_Controller
     }
     function login()
     {
-        $data['title'] = 'Login';
-        $data['page_name'] = 'Login';
+        if ($this->input->server('REQUEST_METHOD') === 'POST') {
+            $params = array(
+                'email' => $this->input->post('wmail'),
+                'password2' => $this->input->post('password'),
+            );
+            $response = $this->whmcs->domain_whois($params);
+            echo '<pre>';
+            print_r($response);
+            die;
 
-        $var['content'] = $this->load->view('login_view', $data, true);
-        $this->load->view('template_blank', $var);
+        } else {
+            $data['title'] = 'Login';
+            $data['page_name'] = 'Login';
+            $var['content'] = $this->load->view('login_view', $data, true);
+            $this->load->view('template_blank', $var);
+        }
+        
     }
     function about_us()
     {

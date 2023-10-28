@@ -9,10 +9,11 @@
                                 <div class="form-section bg-dark">
                                     <div class="section-header text-center">
                                         <!-- <span class="text-shadow">Lets Start</span> -->
+                                        <!-- Whmcs login url https://wantoksolutions.com.pg/whmcs/dologin.php -->
                                         <h4 class="title-heading text-uppercase">Login</h4>
                                     </div>
                                     <div class=" mt-5">
-                                        <form method="post" action="https://wantoksolutions.com.pg/whmcs/dologin.php">
+                                        <form method="post" action="<?= base_url();?>login">
                                             <div class="form-group">
                                                 <label for="email">Email</label>
                                                 <input type="text" class="form-control" id="username" name="username" placeholder="info@wantoksolutions.com">
