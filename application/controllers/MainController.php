@@ -26,7 +26,7 @@ class MainController extends MY_Controller
     {
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
             $params = array(
-                'email' => $this->input->post('wmail'),
+                'email' => $this->input->post('email'),
                 'password2' => $this->input->post('password'),
             );
             $response = $this->whmcs->domain_whois($params);

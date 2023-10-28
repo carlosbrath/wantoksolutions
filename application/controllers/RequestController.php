@@ -16,6 +16,15 @@ class RequestController extends MY_Controller
         $response = $this->whmcs->domain_pricing($params);
         print_r($response);
     }
+    function login(){
+        $params = array(
+            'email' => 'carlosbrathwaite.rad@gmail.com',
+            'password2' => '12345',
+        );
+        $response = $this->whmcs->domain_whois($params);
+        echo '<pre>';
+        print_r($response);
+    }
     function domain_whois()
     {
         $params = array(
