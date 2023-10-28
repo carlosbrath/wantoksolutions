@@ -21,6 +21,7 @@ class RequestController extends MY_Controller
             'email' => 'carlosbrathwaite.rad@gmail.com',
             'password2' => '12345',
         );
+        
         $response = $this->whmcs->domain_whois($params);
         echo '<pre>';
         print_r($response);
