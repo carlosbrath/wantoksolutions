@@ -1058,6 +1058,9 @@ textarea.form-control {
     border: 1px dashed #00FE8A;
     border-radius: 22px;
 }
+.dropdown-menu{
+    background-color: #38454c;
+}
 .list-bulets {
     list-style: none;
     padding-left: 0px;
