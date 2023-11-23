@@ -26,6 +26,15 @@ class RequestController extends MY_Controller
         echo '<pre>';
         print_r($response);
     }
+    function get_client_groups(){
+        $params = array(
+            
+        );
+        
+        $response = $this->whmcs->get_client_groups($params);
+        echo '<pre>';
+        print_r($response);
+    }
     function domain_whois()
     {
         $params = array(
