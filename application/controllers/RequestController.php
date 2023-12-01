@@ -69,7 +69,7 @@ class RequestController extends MY_Controller
         $params = array(
             'firstname' => 'John',
             'lastname' => 'Doe',
-            'email' => 'john.doe@example.com',
+            'email' => 'john.doe123@example.com',
             'address1' => '123 Main Street',
             'city' => 'Anytown',
             'state' => 'State',
