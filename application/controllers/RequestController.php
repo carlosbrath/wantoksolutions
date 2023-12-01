@@ -79,7 +79,7 @@ class RequestController extends MY_Controller
             'password2' => 'password',
             'clientip' => '1.2.3.4',
         );
-        $response = $this->whmcs->get_clients($params);
+        $response = $this->whmcs->add_client($params);
         echo '<pre>';
         print_r($response);
     }
