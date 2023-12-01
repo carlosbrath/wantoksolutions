@@ -63,6 +63,26 @@ class RequestController extends MY_Controller
         echo '<pre>';
         print_r($response);
     }
+    
+    function add_client()
+    {
+        $params = array(
+            'firstname' => 'John',
+            'lastname' => 'Doe',
+            'email' => 'john.doe@example.com',
+            'address1' => '123 Main Street',
+            'city' => 'Anytown',
+            'state' => 'State',
+            'postcode' => '12345',
+            'country' => 'US',
+            'phonenumber' => '800-555-1234',
+            'password2' => 'password',
+            'clientip' => '1.2.3.4',
+        );
+        $response = $this->whmcs->get_clients($params);
+        echo '<pre>';
+        print_r($response);
+    }
     function get_clients()
     {
         $params = array();
