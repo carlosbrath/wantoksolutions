@@ -16,8 +16,8 @@
                                         
                                         <form method="post" action="<?= base_url();?>login">
                                             <div class="form-group">
-                                                <label for="email">Email</label>
-                                                <input type="text" class="form-control" id="username" name="username" placeholder="info@wantoksolutions.com">
+                                                <label for="user_name">Email</label>
+                                                <input type="text" class="form-control" id="user_name" name="user_name" placeholder="info@wantoksolutions.com">
                                             </div>
                                             <div class="form-group">
                                                 <label for="password">Password</label>
