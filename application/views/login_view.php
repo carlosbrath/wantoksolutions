@@ -30,7 +30,7 @@
                                                 <button class="btn btn-login">Login</button>
                                             </div>
                                             <div class="text-center">
-                                                <button class="btn btn-secondary mt-2">Signup</button>
+                                                <a href="<?=base_url('signup')?>" class="btn btn-secondary mt-2">Signup</a>
                                             </div>
                                         </form>
                                     </div>

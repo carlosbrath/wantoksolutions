@@ -16,13 +16,13 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="email">First Name</label>
+                                                <label for="first_name">First Name</label>
                                                 <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="email">Last Name</label>
+                                                <label for="last_name">Last Name</label>
                                                 <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name">
                                             </div>
                                         </div>
@@ -32,8 +32,8 @@
                                         <input type="email" class="form-control" id="email" name="email" placeholder="info@wantoksolutions.com">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Phone No</label>
-                                        <input type="text" class="form-control" id="user_contact" name="user_contact" placeholder="+1 xxx xxxx xx">
+                                        <label for="user_contact">Phone No</label>
+                                        <input type="tel" class="form-control" id="user_contact" name="user_contact" placeholder="+1 xxx xxxx xx">
                                     </div>
                                     <div class="form-group">
                                         <label for="password">Password</label>
@@ -43,7 +43,7 @@
                                         <button type="submit" class="btn btn-login">Signup</button>
                                     </div>
                                     <div class="text-center">
-                                        <button class="btn btn-secondary mt-2">Login</button>
+                                        <a href="<?=base_url('login')?>" class="btn btn-secondary mt-2">Login</a>
                                     </div>
                                 </form>
                             </div>

@@ -99,9 +99,9 @@ if ($_SERVER['HTTP_HOST'] == "localhost" || strpos($_SERVER['HTTP_HOST'], '192')
 	$db['default'] = array(
 		'dsn' => '',
 		'hostname' => 'localhost',
-		'username' => 'wantokpg_whmcs',
-		'password' => ';8wjE=CGJBEo',
-		'database' => 'wantokpg_databse',
+		'username' => 'wantokpg_databse',
+		'password' => 'A~IxeZSu7+O8',
+		'database' => 'wantokpg_database',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,

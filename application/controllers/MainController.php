@@ -70,8 +70,23 @@ class MainController extends MY_Controller
                 'password2' => 'password',
                 'clientip' => '1.2.3.4',
             );
+            $clientid= '';
+            if ($_SERVER['HTTP_HOST'] == "localhost"){
+                $response = $this->whmcs->add_client($params);
+                if($response['result']=="success"){
+                    $clientid=$response['clientid'];
+                }
+            }
+            $data['clientid'] = $clientid;
             // echo '<pre>';print_r($data);die;
             $is_Submitted = $this->common_model->insert_array('users', $data);
+            if($is_Submitted){
+                $this->session->set_flashdata([
+                    'title' => 'Thank You!',
+                    'flash_message' => 'Our Agent will contact you shortly.',
+                ]);
+                redirect(base_url('login'));
+            }
             echo $is_Submitted;
             die;
         } else {
