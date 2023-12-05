@@ -75,10 +75,10 @@ class UserController extends MY_Controller
             );
             $clientid= '';
             if ($_SERVER['HTTP_HOST'] != "localhost"){
-                $response = $this->whmcs->add_client($params);
-                if($response['result']=="success"){
-                    $clientid=$response['clientid'];
-                }
+                // $response = $this->whmcs->add_client($params);
+                // if($response['result']=="success"){
+                //     $clientid=$response['clientid'];
+                // }
             }
             $data['clientid'] = $clientid;
             // echo '<pre>';print_r($data);die;
