@@ -37,7 +37,8 @@ class UserController extends MY_Controller
 				//End For Saving Cart Data On Login
                 redirect(base_url('dashboard'));
 			} else {
-
+                $this->session->set_userdata('msg', 'Username Or Password is wrong!');
+				redirect(base_url('login'));
             }
             
         }
@@ -87,6 +88,7 @@ class UserController extends MY_Controller
                     'title' => 'Thank You!',
                     'flash_message' => 'Our Agent will contact you shortly.',
                 ]);
+                $this->session->set_flashdata('success', 'Successfully Registered! Please Login here.');
                 redirect(base_url('login'));
             }
             echo $is_Submitted;
@@ -98,4 +100,10 @@ class UserController extends MY_Controller
             $this->load->view('template_blank', $var);
         }
     }
+    function logout()
+	{
+		$this->session->unset_userdata('user_id');
+		$this->session->set_userdata('is_login', '');
+		redirect(base_url('login'));
+	}
 }

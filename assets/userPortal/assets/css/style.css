@@ -1,0 +1,161 @@
+/* 
+    =========================================================
+    * RADUI HTML Theme Dashboard - v1.0.0
+    =========================================================
+    * Product Page: https://radosol.com
+ */
+
+/* -------------App setting----------------------------- */
+.fixed-sidebar:not(.fixed-header) .app-header {
+    margin-left: 230px;
+}
+.fixed-sidebar .app-main .app-main__outer {
+    z-index: 9;
+    padding-left: 230px;
+}
+.app-sidebar {
+    width: 230px;
+    display: flex;
+    z-index: 11;
+    overflow: hidden;
+    min-width: 230px;
+    position: relative;
+    flex: 0 0 230px;
+    margin-top: -60px;
+    padding-top: 60px;
+    transition: all .2s;
+}
+.vertical-nav-menu li a {
+    display: block;
+    line-height: 2.4rem;
+    height: 2.4rem;
+    padding: 0px 1rem 0px 20px;
+    position: relative;
+    border-radius: 0.25rem;
+    color: rgb(52, 58, 64);
+    white-space: nowrap;
+    transition: all 0.2s ease 0s;
+    margin: 0.1rem 0px;
+}
+/* ----------------------------End App Setting------------------ */
+.side-menue a {
+    font-size: 1.5rem;
+    color: #0a0a0a;
+}
+
+.side-menue li {
+    margin-top: 5px;
+}
+
+.btn-api {
+    border: 3px solid #02A0FC;
+    border-radius: 8px;
+    color: #02a0fc;
+}
+
+#api-table table {
+    border-collapse: separate;
+    -webkit-border-vertical-spacing: 20px;
+    -webkit-border-horizontal-spacing: 0px;
+}
+
+#api-table table tr {
+    background-color: #fff;
+}
+
+.app-theme-white .app-sidebar {
+    background: #D9D9D9;
+}
+.date-selector {
+    background: #fff;
+    cursor: pointer;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 11px;
+    font-size: 11px;
+    margin-top: 0.6rem;
+}
+
+/* --------Feature Pricing Modal-------------- */
+.feature-pricing .modal-body{
+    padding: 60px 55px 40px;
+}
+.feature-pricing .modal-content {
+    background-color: #e5e5e5;
+}
+.feature-pricing .card{
+        border-radius: 28px;
+}
+.feature-pricing .btn-card-footer {
+    width: 100%;
+}
+.feature-pricing .custom-text {
+    font-size: 40px;
+    font-family: "Inter";
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin: 2rem;
+}
+.feature-pricing .close {
+    float: right;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #5782f1;
+    text-shadow: 2px 3px 0 #000;
+    opacity: .5;
+}
+.feature-pricing .feature-pricing {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/* ------------Media Queries------------------ */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .feature-pricing .custom-text {
+        font-size: 16px;
+        margin: 1.5rem;
+     }
+     .feature-pricing .modal-body {
+        padding: 20px 15px 15px;
+    }  
+ }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .modal-lg, .modal-xl {
+        max-width: 1200px;
+    } 
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
+

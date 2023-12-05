@@ -44,12 +44,12 @@
                             <a class="nav-link" href="<?=base_url('about-us');?>">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://wantoksolutions.com.pg/whmcs/dologin.php">Login</a>
+                            <a class="nav-link" href="<?=base_url('login');?>">Login</a>
                         </li>
 			        </ul>
                     <ul class="navbar-nav ml-auto">
                         
-                        <a class="btn btn-header" >Get IN TOUCH</a>
+                        <a href="<?=base_url('get-in-touch')?>" class="btn btn-header" >Get IN TOUCH</a>
                     </ul>
 			    </div>
 		    </div>

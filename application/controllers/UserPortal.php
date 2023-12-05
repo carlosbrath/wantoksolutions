@@ -7,8 +7,10 @@ class UserPortal extends MY_Controller
     function __construct()
     {
         parent::__construct();
+        user_auth();
     }
     function index() {
-        echo '<pre>';print_r($this->session->userdata());die;
+        $var='';
+        $this->load->view('userPortal/index', $var);
     }
 }

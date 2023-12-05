@@ -104,6 +104,14 @@ class MainController extends MY_Controller
         $var['content'] = $this->load->view('about_us_view', $data, true);
         $this->load->view('template2023', $var);
     }
+    function getin_touch()
+    {
+        $data['title'] = 'Projects Details';
+        $data['page_name'] = 'Projects Details';
+
+        $var['content'] = $this->load->view('get-intouch', $data, true);
+        $this->load->view('template2023', $var);
+    }
     function search_domain()
     {
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
