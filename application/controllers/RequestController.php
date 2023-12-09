@@ -131,4 +131,11 @@ class RequestController extends MY_Controller
         echo '<pre>';
         print_r($this->cart->contents());
     }
+    function testinApi()  {
+        $params = array();
+        $url = api_url('get_products');
+        $response =$this->send_request($url, $params);
+        echo '<pre>';
+        print_r($response);die;
+    }
 }

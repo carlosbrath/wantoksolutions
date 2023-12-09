@@ -46,7 +46,8 @@
                                 <h5>$1.99/mo</h5>
                             </div>
                             <div>
-                                <a href="https://wantoksolutions.com.pg/whmcs/index.php?rp=/store/shared-hostin/basic" class="btn btn-custom">Order Now</a>
+                                <!-- <a href="https://wantoksolutions.com.pg/whmcs/index.php?rp=/store/shared-hostin/basic" class="btn btn-custom">Order Now</a> -->
+                                <a href="<?=base_url()?>" class="btn btn-custom">Order Now</a>
                             </div>
                             <div class="sub-heading">
                                 <p>Ideal solution for beginners.</p>
