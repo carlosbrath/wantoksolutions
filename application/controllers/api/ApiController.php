@@ -15,7 +15,7 @@ class ApiController extends MY_Controller
     function get_products()
     {
         $params = array();
-        // $response = $this->whmcs->get_products($params);
-        return 'working';
+        $response = $this->whmcs->get_products($params);
+        echo $response;
     }
 }

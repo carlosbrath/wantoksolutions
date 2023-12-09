@@ -19,7 +19,8 @@ class MainController extends MY_Controller
         // $response= $this->whmcs->get_products($params);
         // $data['products']=$response['']['product'];
         $params = array();
-        $response = api_url('get_products');
+        $url = api_url('get_products');
+        $response =$this->send_request($url, $params);
         echo '<pre>';
         print_r($response);die;
         $var['content'] = $this->load->view('home_view', $data, true);
