@@ -118,8 +118,8 @@ class Whmcs_order_handling extends WHMCS_Base{
 	public function whmcs_get_products($params = array()) {
 		$params['action'] = 'GetProducts';
 		// return Whmcs_base::send_request($params);
-    $load = new Whmcs_base();
-    return $load->send_request($params);
+		$load = new Whmcs_base();
+		return $load->send_request($params);
 	}
 
 	//-------------------------------------------------------------

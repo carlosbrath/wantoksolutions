@@ -121,9 +121,9 @@ class RequestController extends MY_Controller
     function add_to_cart()
     {
         $data = array(
-            'id'      => 'sku_345BDF',
+            'id'      => 'sku_345BDL',
             'qty'     => 3,
-            'price'   => 40.60,
+            'price'   => 45.60,
             'name'    => 'T-Shirt',
             'options' => array('Size' => 'L', 'Color' => 'Red')
         );

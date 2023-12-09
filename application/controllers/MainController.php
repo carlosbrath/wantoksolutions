@@ -18,7 +18,10 @@ class MainController extends MY_Controller
         // );
         // $response= $this->whmcs->get_products($params);
         // $data['products']=$response['']['product'];
-
+        $params = array();
+        $response = api_url('get_products');
+        echo '<pre>';
+        print_r($response);die;
         $var['content'] = $this->load->view('home_view', $data, true);
         $this->load->view('template2023', $var);
     }
