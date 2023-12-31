@@ -99,8 +99,8 @@ class MainController extends MY_Controller
     }
     function getin_touch()
     {
-        $data['title'] = 'Projects Details';
-        $data['page_name'] = 'Projects Details';
+        $data['title'] = 'Get In Touch';
+        $data['page_name'] = 'Get In Touch';
 
         $var['content'] = $this->load->view('get-intouch', $data, true);
         $this->load->view('template2023', $var);

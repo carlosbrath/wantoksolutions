@@ -60,6 +60,8 @@ $route['our-services'] = 'MainController/our_services';
 $route['services/(:any)'] = 'MainController/services_details/$1';
 $route['projects/(:any)'] = 'MainController/projects_details/$1';
 
+$route['chose-domain'] = 'CartController/chose_domain';
+
 $route['dashboard'] = 'UserPortal/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
