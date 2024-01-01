@@ -883,6 +883,26 @@ p {
     height: 112vh;
 }
 
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #495057;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.list-group-item-action {
+    width: 100%;
+    color: #fff;
+    text-align: inherit;
+}
+
 .price .type h4 {
     font-size: 18px;
     text-transform: uppercase;

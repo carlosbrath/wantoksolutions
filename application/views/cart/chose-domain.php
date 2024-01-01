@@ -23,18 +23,59 @@
             </div>
         </div>
         <div class="row  mt-4">
-            <div class="col-md-4 cart-sidebar">
+            <div class="col-md-3 cart-sidebar">
                 <div class="panel-heading card-header">
                     <h5 class="panel-title">
-                        <img src="<?=asset_url()?>images/icon/cart.png" alt="">
+                        <img src="<?= asset_url() ?>images/icon/cart.png" alt="">
                         Categories
-                        <img src="<?=asset_url()?>images/icon/up-arrow.png" class="card-minimise panel-minimise pull-right float-right" alt="">
+                        <img src="<?= asset_url() ?>images/icon/up-arrow.png" class="card-minimise panel-minimise pull-right float-right" alt="">
                     </h5>
+
+                </div>
+                <div class="list-group collapsable-card-body">
+                    <a href="" class="list-group-item list-group-item-action">Shared Hosting</a>
                 </div>
 
             </div>
-            <div class="col-md-6">
-
+            <div class="col-md-9">
+                <label for="">Registerd New Domain</label>
+                <form action="" onsubmit="validateForm(event, this, 1)">
+                    <div class="col-sm-10 mt-4 col-sm-offset-1 offset-sm-1">
+                        <div class="row domains-row">
+                            <div class="col-xs-7 col-7">
+                                <div class="input-group">
+                                    <div class="input-group-addon input-group-prepend">
+                                        <span class="input-group-text">www.</span>
+                                    </div>
+                                    <input type="text" id="domainName" name="domainName" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-3">
+                                <select id="domainType" name="domainType" class="form-control">
+                                    <option value=".com">.com</option>
+                                    <option value=".net">.net</option>
+                                    <option value=".org">.org</option>
+                                    <option value=".biz">.biz</option>
+                                    <option value=".info">.info</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Check
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
 </section>
+<script>
+    function validateForm(event, form, id) {
+        event.preventDefault();
+        var inputs = form.querySelectorAll('input');
+        var formData = $(form).serialize();
+
+        ajaxfunction('POST', '<?= base_url() ?>CartController/check_domain', $(form).serialize(), handleResponse);
+    }
+</script>
