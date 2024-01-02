@@ -69,6 +69,19 @@
                 </form>
             </div>
         </div>
+        <div class="row mt-4">
+            <div class="offset-4 col-4 ">
+                <div class="text-center">
+                    <div class="domain-section">
+                       
+                    </div>
+                    <button id="btnDomainContinue " type="submit" class="btn btn-primary btn-lg w-hidden mt-4" style="display: inline-block;">
+                        Continue
+                        &nbsp;<i class="fas fa-arrow-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 </section>
 <script>
     function validateForm(event, form, id) {

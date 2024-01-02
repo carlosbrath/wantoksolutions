@@ -34,15 +34,22 @@ class CartController extends MY_Controller
                     $data['pricing'] = $responsePricing['pricing'];
                     $data['currency'] = $responsePricing['currency'];
                     // Send success response as JSON
+                    $html='';
+                    $html.='<div class="domain-available domain-checker-available headline" style="display: block;"><strong>'.$params['domain'].'</strong> is available.</div>';
+                    $html.='<div class="domain-price" style="display: block;">';
+                    $html.= '<span class="register-price-label">Continue to register this domain for</span>';
+                    $html.='<span class="price">'.$data['currency']['prefix'].(intval($data['pricing'][$this->input->post('domainType')]['register'][1]) + 10). $data['currency']['code'].'</span>';
+                    $html.='</div>';
                     echo json_encode(array(
-                        'status' => 'success',
-                        'data' => $data
+                        'msg' => 'success',
+                        'data' => $data,
+                        'html'=>$html,
                     ));
                     exit; // Stop further execution
                 } else {
                     // Send unavailable status as JSON
                     echo json_encode(array(
-                        'status' => 'unavailable'
+                        'msg' => 'unavailable'
                     ));
                     exit; // Stop further execution
                 }
@@ -53,9 +60,16 @@ class CartController extends MY_Controller
 
         // Handle other scenarios or errors
         // Send an error response as JSON
+        $html='';
+        $html.='<div class="domain-available domain-checker-available headline" style="display: block;"><strong>radoosol.com</strong> is available.</div>';
+        $html.='<div class="domain-price" style="display: block;">';
+        $html.= '<span class="register-price-label">Continue to register this domain for</span>';
+        $html.='<span class="price">$14.95 USD</span>';
+        $html.='</div>';
         echo json_encode(array(
-            'status' => 'error',
-            'message' => 'Error occurred while processing the form.'
+            'msg' => 'success',
+            'data' => '$data',
+            'html'=>$html,
         ));
     }
     function add_to_cart()

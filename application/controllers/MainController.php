@@ -118,7 +118,6 @@ class MainController extends MY_Controller
                         'currencyid' => '',
                     );
                     $response = $this->whmcs->domain_pricing($params);
-                    dd($response);
                     $data['pricing'] = $response['pricing'];
                     $data['currency'] = $response['currency'];
                 } else {

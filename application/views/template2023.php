@@ -82,7 +82,8 @@
                 success: function(data) {
                     let response = JSON.parse(data);
                     if (response.msg == 'success') {
-                        $('#result').html('Form submitted successfully!');
+
+                        $('.domain-section').append(response.html);
                     }
                     if (typeof callback === 'function') {
                         callback(response); // Pass the response to the callback function
@@ -94,6 +95,7 @@
                 }
             });
         }
+        
 
         function handleResponse(response) {
             // Handle the response data here

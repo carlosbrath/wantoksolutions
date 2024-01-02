@@ -902,6 +902,10 @@ p {
     color: #fff;
     text-align: inherit;
 }
+ .headline {
+    font-size: 2em;
+    word-wrap: break-word;
+}
 
 .price .type h4 {
     font-size: 18px;
