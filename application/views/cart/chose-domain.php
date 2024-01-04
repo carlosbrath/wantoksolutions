@@ -52,11 +52,11 @@
                             </div>
                             <div class="col-xs-3 col-3">
                                 <select id="domainType" name="domainType" class="form-control">
-                                    <option value=".com">com</option>
-                                    <option value=".net">net</option>
-                                    <option value=".org">org</option>
-                                    <option value=".biz">biz</option>
-                                    <option value=".info">info</option>
+                                    <option value="com">.com</option>
+                                    <option value="net">.net</option>
+                                    <option value="org">.org</option>
+                                    <option value="biz">.biz</option>
+                                    <option value="info">.info</option>
                                 </select>
                             </div>
                             <div class="col-sm-2">
