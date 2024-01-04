@@ -74,11 +74,11 @@
                 data: formData,
                 dataType: 'json', // corrected spelling here
                 success: function(response) {
+                    $('#domain-section').html('');
                     if (response.msg == 'success') {
-                        $('#domain-section').html('');
                         $('#domain-section').html(response.html);
                         $('#btn-continue').css('display', 'block')
-                    } else if (response.msg == 'success') {
+                    } else if (response.msg == 'unavailable') {
                         $('#domain-section').html(response.html);
 
                     } else if (response.msg == 'error') {
