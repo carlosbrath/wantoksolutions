@@ -10,21 +10,19 @@ class CartController extends MY_Controller
     }
     public function add_to_cart($pid) {
         $params = array(
-            'pid'=>2
+            'pid' => '2',
         );
         $url = api_url('get_products');
         $response =$this->send_request($url, $params);
-        dd($response);
         $data = array(
-            'id'      => 'sku_345BDL',
-            'qty'     => 3,
-            'price'   => 45.60,
-            'name'    => 'T-Shirt',
-            'options' => array('Size' => 'L', 'Color' => 'Red')
+            'id'      => 'hostin_'.$pid,
+            'qty'     => 1,
+            'price'   => 1.99,
+            'name'    => 'Ideal solution for beginners.',
+            'options' => array()
         );
         $this->cart->insert($data);
-        echo '<pre>';
-        print_r($this->cart->contents());
+        redirect('chose-domain');
     }
     public function chose_domain()
     {
