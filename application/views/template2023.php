@@ -67,6 +67,7 @@
     <script src="<?= asset_url(); ?>js/app.js"></script>
     <script>
         function ajaxfunction(method, url, formData, callback) {
+            
             $.ajax({
                 method: method,
                 url: url,
@@ -74,14 +75,17 @@
                 dataType: 'json', // corrected spelling here
                 success: function(response) {
                     if (response.msg == 'success') {
-                        console.log(response.msg);
-                        $('.domain-section').append(response.html);
+                        $('.domain-section').html('');
+                        $('#domain-section').html(response.html);
+                        $('#btn-continue').css('display', 'block')
+                    } 
+                    if(response.msg == 'error'){
+                        console.log(response.msg)
                     }
                 },
                 error: function(xhr, status, error) {
                     console.error(xhr.responseText);
-                    $('.domain-section').html(xhr.responseText);
-                    // $('#result').html('Error occurred while submitting the form.');
+                    $('#result').html('Error occurred while submitting the form.');
                 }
             });
         }

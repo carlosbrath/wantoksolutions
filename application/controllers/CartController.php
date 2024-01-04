@@ -21,8 +21,10 @@ class CartController extends MY_Controller
         // dd($this->input->post());
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
             $domian_name=$this->input->post('domainName') . $this->input->post('domainType');
+            $domian_name=$this->input->post('domainName') . $this->input->post('domainType');
+            $domanType= $this->input->post('domainType');
             $params = array(
-                'domain' => $this->input->post('domainName') . $this->input->post('domainType'),
+                'domain' => $this->input->post('domainName') .'.'. $this->input->post('domainType'),
             );
             $response = $this->whmcs->domain_whois($params);
 
@@ -39,7 +41,7 @@ class CartController extends MY_Controller
                     $html.='<div class="domain-available domain-checker-available headline" style="display: block;"><strong>'.$domian_name.'</strong> is available.</div>';
                     $html.='<div class="domain-price" style="display: block;">';
                     $html.= '<span class="register-price-label">Continue to register this domain for</span>';
-                    $html.='<span class="price">'.$data['currency']['prefix'].(intval($data['pricing']['com']['register'][1]) + 10). $data['currency']['code'].'</span>';
+                    $html.='<span class="price">'.$data['currency']['prefix'].(intval($data['pricing'][$domanType]['register'][1]) + 10). $data['currency']['code'].'</span>';
                     $html.='</div>';
                     echo json_encode(array(
                         'msg' => 'success',

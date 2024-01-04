@@ -52,11 +52,11 @@
                             </div>
                             <div class="col-xs-3 col-3">
                                 <select id="domainType" name="domainType" class="form-control">
-                                    <option value=".com">.com</option>
-                                    <option value=".net">.net</option>
-                                    <option value=".org">.org</option>
-                                    <option value=".biz">.biz</option>
-                                    <option value=".info">.info</option>
+                                    <option value=".com">com</option>
+                                    <option value=".net">net</option>
+                                    <option value=".org">org</option>
+                                    <option value=".biz">biz</option>
+                                    <option value=".info">info</option>
                                 </select>
                             </div>
                             <div class="col-sm-2">
@@ -72,13 +72,15 @@
         <div class="row mt-4">
             <div class="offset-4 col-4 ">
                 <div class="text-center">
-                    <div class="domain-section">
-                       
+                    <div class="domain-section" id="domain-section">
+
                     </div>
-                    <button id="btnDomainContinue " type="submit" class="btn btn-primary btn-lg w-hidden mt-4" style="display: inline-block;">
-                        Continue
-                        &nbsp;<i class="fas fa-arrow-circle-right"></i>
-                    </button>
+                    <div class="btn-continue" id="btn-continue" style="display: none;">
+                        <button id="btnDomainContinue " type="submit" class="btn btn-primary btn-lg w-hidden mt-4" style="display: inline-block;">
+                            Continue
+                            &nbsp;<i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
