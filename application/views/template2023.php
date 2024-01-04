@@ -67,7 +67,7 @@
     <script src="<?= asset_url(); ?>js/app.js"></script>
     <script>
         function ajaxfunction(method, url, formData, callback) {
-            
+
             $.ajax({
                 method: method,
                 url: url,
@@ -78,14 +78,10 @@
                         $('#domain-section').html('');
                         $('#domain-section').html(response.html);
                         $('#btn-continue').css('display', 'block')
-                    } 
-                    elseif(response.msg == 'success')
-                    {
+                    } else if (response.msg == 'success') {
                         $('#domain-section').html(response.html);
 
-                    } 
-                    elseif(response.msg == 'error')
-                    {
+                    } else if (response.msg == 'error') {
                         console.log(response.msg)
                     }
                 },
