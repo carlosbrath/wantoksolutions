@@ -60,16 +60,9 @@ class CartController extends MY_Controller
 
         // Handle other scenarios or errors
         // Send an error response as JSON
-        $html='';
-        $html.='<div class="domain-available domain-checker-available headline" style="display: block;"><strong>radoosol.com</strong> is available.</div>';
-        $html.='<div class="domain-price" style="display: block;">';
-        $html.= '<span class="register-price-label">Continue to register this domain for</span>';
-        $html.='<span class="price">$14.95 USD</span>';
-        $html.='</div>';
+        
         echo json_encode(array(
-            'msg' => 'success',
-            'data' => '$data',
-            'html'=>$html,
+            'msg' => 'error',
         ));
     }
     function add_to_cart()

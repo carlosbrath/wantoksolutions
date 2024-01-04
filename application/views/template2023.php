@@ -67,35 +67,25 @@
     <script src="<?= asset_url(); ?>js/app.js"></script>
     <script>
         function ajaxfunction(method, url, formData, callback) {
-            console.log(url)
             $.ajax({
                 method: method,
                 url: url,
                 data: formData,
-                dataType: 'jason',
-                beforeSend: function() {
-                    // $("#loaderWrapper").show();
-                },
-                complete: function() {
-                    // $("#loaderWrapper").hide();
-                },
-                success: function(data) {
-                    let response = JSON.parse(data);
+                dataType: 'json', // corrected spelling here
+                success: function(response) {
                     if (response.msg == 'success') {
-
+                        console.log(response.msg);
                         $('.domain-section').append(response.html);
-                    }
-                    if (typeof callback === 'function') {
-                        callback(response); // Pass the response to the callback function
                     }
                 },
                 error: function(xhr, status, error) {
                     console.error(xhr.responseText);
-                    $('#result').html('Error occurred while submitting the form.');
+                    $('.domain-section').html(xhr.responseText);
+                    // $('#result').html('Error occurred while submitting the form.');
                 }
             });
         }
-        
+
 
         function handleResponse(response) {
             // Handle the response data here
