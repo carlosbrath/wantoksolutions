@@ -8,7 +8,25 @@ class CartController extends MY_Controller
     {
         parent::__construct();
     }
-    function chose_domain()
+    public function add_to_cart($pid) {
+        $params = array(
+            'pid'=>2
+        );
+        $url = api_url('get_products');
+        $response =$this->send_request($url, $params);
+        dd($response);
+        $data = array(
+            'id'      => 'sku_345BDL',
+            'qty'     => 3,
+            'price'   => 45.60,
+            'name'    => 'T-Shirt',
+            'options' => array('Size' => 'L', 'Color' => 'Red')
+        );
+        $this->cart->insert($data);
+        echo '<pre>';
+        print_r($this->cart->contents());
+    }
+    public function chose_domain()
     {
         $data['title'] = 'chose-domain';
         $data['page_name'] = 'chose-domain';
@@ -16,7 +34,7 @@ class CartController extends MY_Controller
         $var['content'] = $this->load->view('cart/chose-domain', $data, true);
         $this->load->view('template2023', $var);
     }
-    function check_domain()
+    public function check_domain()
     {
         // dd($this->input->post());
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
@@ -68,18 +86,5 @@ class CartController extends MY_Controller
         echo json_encode(array(
             'msg' => 'error',
         ));
-    }
-    function add_to_cart()
-    {
-        $data = array(
-            'id'      => 'sku_345BDL',
-            'qty'     => 3,
-            'price'   => 45.60,
-            'name'    => 'T-Shirt',
-            'options' => array('Size' => 'L', 'Color' => 'Red')
-        );
-        $this->cart->insert($data);
-        echo '<pre>';
-        print_r($this->cart->contents());
     }
 }

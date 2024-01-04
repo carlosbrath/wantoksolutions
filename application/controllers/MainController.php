@@ -12,6 +12,10 @@ class MainController extends MY_Controller
     {
         $data['title'] = 'Home';
         $data['page_name'] = 'Home';
+        // $params = array();
+        // $url = api_url('get_products');
+        // $response =$this->send_request($url, $params);
+        // dd($response);
         $var['content'] = $this->load->view('home_view', $data, true);
         $this->load->view('template2023', $var);
     }
