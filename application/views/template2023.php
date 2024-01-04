@@ -75,11 +75,17 @@
                 dataType: 'json', // corrected spelling here
                 success: function(response) {
                     if (response.msg == 'success') {
-                        $('.domain-section').html('');
+                        $('#domain-section').html('');
                         $('#domain-section').html(response.html);
                         $('#btn-continue').css('display', 'block')
                     } 
-                    if(response.msg == 'error'){
+                    elseif(response.msg == 'success')
+                    {
+                        $('#domain-section').html(response.html);
+
+                    } 
+                    elseif(response.msg == 'error')
+                    {
                         console.log(response.msg)
                     }
                 },

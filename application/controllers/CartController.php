@@ -52,7 +52,8 @@ class CartController extends MY_Controller
                 } else {
                     // Send unavailable status as JSON
                     echo json_encode(array(
-                        'msg' => 'unavailable'
+                        'msg' => 'unavailable',
+                        'html' => '<div><strong>This Domain Not Avaible</strong></div>'
                     ));
                     exit; // Stop further execution
                 }
