@@ -20,6 +20,7 @@ class CartController extends MY_Controller
     {
         // dd($this->input->post());
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
+            $domian_name=$this->input->post('domainName') . $this->input->post('domainType');
             $params = array(
                 'domain' => $this->input->post('domainName') . $this->input->post('domainType'),
             );
@@ -35,7 +36,7 @@ class CartController extends MY_Controller
                     $data['currency'] = $responsePricing['currency'];
                     // Send success response as JSON
                     $html='';
-                    $html.='<div class="domain-available domain-checker-available headline" style="display: block;"><strong>'.$params['domain'].'</strong> is available.</div>';
+                    $html.='<div class="domain-available domain-checker-available headline" style="display: block;"><strong>'.$domian_name.'</strong> is available.</div>';
                     $html.='<div class="domain-price" style="display: block;">';
                     $html.= '<span class="register-price-label">Continue to register this domain for</span>';
                     $html.='<span class="price">'.$data['currency']['prefix'].(intval($data['pricing'][$this->input->post('domainType')]['register'][1]) + 10). $data['currency']['code'].'</span>';
