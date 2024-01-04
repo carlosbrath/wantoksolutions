@@ -39,7 +39,7 @@ class CartController extends MY_Controller
                     $html.='<div class="domain-available domain-checker-available headline" style="display: block;"><strong>'.$domian_name.'</strong> is available.</div>';
                     $html.='<div class="domain-price" style="display: block;">';
                     $html.= '<span class="register-price-label">Continue to register this domain for</span>';
-                    $html.='<span class="price">'.$data['currency']['prefix'].(intval($data['pricing'][$this->input->post('domainType')]['register'][1]) + 10). $data['currency']['code'].'</span>';
+                    $html.='<span class="price">'.$data['currency']['prefix'].(intval($data['pricing']['com']['register'][1]) + 10). $data['currency']['code'].'</span>';
                     $html.='</div>';
                     echo json_encode(array(
                         'msg' => 'success',
