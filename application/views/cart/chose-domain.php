@@ -73,7 +73,7 @@
         </div>
         <div class="row mt-4">
             <div class="offset-4 col-4 ">
-                <form action="<?= base_url() ?>cartcontroller/checkout" method="POST">
+                <form action="<?= base_url() ?>cartController/checkout" method="POST">
                     <div class="text-center">
                         <div class="domain-section" id="domain-section">
 
