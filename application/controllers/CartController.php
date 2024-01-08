@@ -42,6 +42,9 @@ class CartController extends MY_Controller
             $this->load->view('template2023', $var);
         }
     }
+    public function add_domain(){
+        dd($this->input->post());
+    }
     public function checkout()
     {
         $data['title'] = 'chose-domain';
@@ -49,11 +52,11 @@ class CartController extends MY_Controller
         $var['content'] = $this->load->view('cart/checkout', $data, true);
         $this->load->view('template2023', $var);
     }
+
     public function check_domain()
     {
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
-            $domian_name = $this->input->post('domainName') . $this->input->post('domainType');
-            $domian_name = $this->input->post('domainName') . $this->input->post('domainType');
+            $domian_name = $this->input->post('domainName') .'.'. $this->input->post('domainType');
             $domanType = $this->input->post('domainType');
             $params = array(
                 'domain' => $this->input->post('domainName') . '.' . $this->input->post('domainType'),

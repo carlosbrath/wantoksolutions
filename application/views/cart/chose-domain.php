@@ -14,6 +14,7 @@
 <!-- END CTA -->
 <section class="section bg-dark" id="services-details">
     <div class="container">
+
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="text-center section-header">
@@ -24,6 +25,7 @@
         </div>
         <div class="row  mt-4">
             <div class="col-md-3 cart-sidebar">
+
                 <div class="panel-heading card-header">
                     <h5 class="panel-title">
                         <img src="<?= asset_url() ?>images/icon/cart.png" alt="">
@@ -71,19 +73,22 @@
         </div>
         <div class="row mt-4">
             <div class="offset-4 col-4 ">
-                <div class="text-center">
-                    <div class="domain-section" id="domain-section">
+                <form action="<?= base_url() ?>cartcontroller/checkout" method="POST">
+                    <div class="text-center">
+                        <div class="domain-section" id="domain-section">
 
+                        </div>
+                        <div class="btn-continue" id="btn-continue" style="display: none;">
+                            <button id="btnDomainContinue " type="submit" class="btn btn-primary btn-lg w-hidden mt-4" style="display: inline-block;">
+                                Continue
+                                &nbsp;<i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
                     </div>
-                    <div class="btn-continue" id="btn-continue" style="display: none;">
-                        <button id="btnDomainContinue " type="submit" class="btn btn-primary btn-lg w-hidden mt-4" style="display: inline-block;">
-                            Continue
-                            &nbsp;<i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
+    </div>
 </section>
 <script>
     function validateForm(event, form, id) {
