@@ -14,15 +14,15 @@ class ApiController extends MY_Controller
     }
     function get_products()
     {
-        $params = array();
+        $params= $this->input->post();
         $response = $this->whmcs->get_products($params);
-        echo $response;
+        echo json_encode($response);
     }
     function domain_pricing()
     {
         $params= $this->input->post();
         $response = $this->whmcs->domain_pricing($params);
-        echo $response;
+        echo json_encode($response);
     }
     
 }
