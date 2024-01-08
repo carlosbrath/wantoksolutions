@@ -17,7 +17,6 @@ class MY_Controller extends CI_Controller
         foreach ($params as $k => $v) {
             $query_string .= "$k=" . urlencode($v) . "&";
         }
-
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -36,14 +35,5 @@ class MY_Controller extends CI_Controller
         curl_close($ch);
 
         return $arr = json_decode($jsondata, true); # Decode JSON String
-
-        //print_r($arr); # Output XML Response as Array
-
-        /*
-        Debug Output - Uncomment if needed to troubleshoot problems
-        echo "<textarea rows=50 cols=100>Request: ".print_r($postfields,true);
-        echo "\nResponse: ".htmlentities($jsondata)."\n\nArray: ".print_r($arr,true);
-        echo "</textarea>";
-        */
     }
 }

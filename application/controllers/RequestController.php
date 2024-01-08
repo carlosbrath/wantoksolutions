@@ -132,10 +132,11 @@ class RequestController extends MY_Controller
         print_r($this->cart->contents());
     }
     function testinApi()  {
-        $params = array();
-        $url = api_url('get_products');
+        $params = array(
+            'currencyid' => 'USD',
+        );
+        $url = local_api_url('domain_pricing');
         $response =$this->send_request($url, $params);
-        echo '<pre>';
-        print_r($response);die;
+        dd($response);
     }
 }

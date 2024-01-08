@@ -107,8 +107,8 @@
                             <h5>$3.99/mo</h5>
                         </div>
                         <div>
-                            <!-- <a href="https://wantoksolutions.com.pg/whmcs/index.php?rp=/store/shared-hostin/business" class="btn btn-custom">Order Now</a> -->
-                            <a href="<?= base_url() ?>CartController/add_to_cart/4" class="btn btn-custom">Order Now</a>
+                            <a href="https://wantoksolutions.com.pg/whmcs/index.php?rp=/store/shared-hostin/business" class="btn btn-custom">Order Now</a>
+                            <!-- <a href="<?= base_url() ?>CartController/add_to_cart/4" class="btn btn-custom">Order Now</a> -->
                         </div>
                         <div class="sub-heading">
                             <p>Level-up with more power and enhanced features</p>

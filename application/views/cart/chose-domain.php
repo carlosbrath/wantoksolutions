@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <!-- <p class="cta-desc text-white text-center mb-0">We Take Care of Your Technology</p> -->
-                <h1 class="text-white text-center">Get In Touch</h1>
+                <h1 class="text-white text-center">Chose Domain</h1>
 
             </div>
         </div>
@@ -17,8 +17,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="text-center section-header">
-                    <span class="text-shadow">your websites</span>
-                    <h4 class="title-heading text-uppercase">web development</h4>
+                    <span class="text-shadow">Chose Domain</span>
+                    <h4 class="title-heading text-uppercase">Domain You Want</h4>
                 </div>
             </div>
         </div>

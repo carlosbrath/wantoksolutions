@@ -18,4 +18,11 @@ class ApiController extends MY_Controller
         $response = $this->whmcs->get_products($params);
         echo $response;
     }
+    function domain_pricing()
+    {
+        $params= $this->input->post();
+        $response = $this->whmcs->domain_pricing($params);
+        echo $response;
+    }
+    
 }
