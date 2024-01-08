@@ -24,5 +24,11 @@ class ApiController extends MY_Controller
         $response = $this->whmcs->domain_pricing($params);
         echo json_encode($response);
     }
+    function domain_whois()
+    {
+        $params= $this->input->post();
+        $response = $this->whmcs->domain_whois($params);
+        echo json_encode($response);
+    }
     
 }

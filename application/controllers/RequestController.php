@@ -133,9 +133,9 @@ class RequestController extends MY_Controller
     }
     function testinApi()  {
         $params = array(
-            'pid' => 2,
+            'currencyid' => 'USD',
         );
-        $url = api_url('get_products');
+        $url = api_url('domain_pricing');
         $response = $this->send_request($url, $params);
         dd($response);
     }

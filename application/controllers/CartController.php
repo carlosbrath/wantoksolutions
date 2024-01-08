@@ -58,7 +58,9 @@ class CartController extends MY_Controller
             $params = array(
                 'domain' => $this->input->post('domainName') . '.' . $this->input->post('domainType'),
             );
-            $response = $this->whmcs->domain_whois($params);
+            $url = api_url('domain_whois');
+            // $response = $this->whmcs->domain_whois($params);
+            $response = $this->send_request($url, $params);
 
             if ($response['result'] == 'success') {
                 if ($response['status'] == 'available') {
