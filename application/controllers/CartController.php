@@ -43,7 +43,32 @@ class CartController extends MY_Controller
         }
     }
     public function add_domain(){
-        dd($this->input->post());
+        $domianName= $this->input->post('domain_name');
+        $params = array(
+            'domain' => $domianName,
+        );
+        $url = api_url('domain_whois');
+        $response = $this->send_request($url, $params);
+        if ($response['result'] == 'success') {
+            if ($response['status'] == 'available') {
+                $params = array(
+                    'currencyid' => 'USD',
+                );
+                $url = api_url('domain_pricing');
+                $responsePricing = $this->send_request($url, $params);
+                dd($responsePricing);die;
+                $data = array(
+                    'id'      => 'hostin_' . $product['pid'],
+                    'qty'     => 1,
+                    'suffix'     =>$product['pricing']['USD']['suffix'],
+                    'prefix'     =>$product['pricing']['USD']['prefix'],
+                    'price'     =>$product['pricing']['USD']['monthly'],
+                    'name'    => $product['name'],
+                    'options' => array('descrption'=>$product['description']),
+                );
+                $this->cart->insert($data);
+            }
+        }
     }
     public function checkout()
     {
@@ -80,6 +105,7 @@ class CartController extends MY_Controller
                     $html .= '<div class="domain-available domain-checker-available headline" style="display: block;"><strong>' . $domian_name . '</strong> is available.</div>';
                     $html .= '<div class="domain-price" style="display: block;">';
                     $html .= '<span class="register-price-label">Continue to register this domain for</span>';
+                    $html .= '<input type="hidden" name="domain_name" value="'.$domian_name.'">';
                     $html .= '<span class="price">' . $data['currency']['prefix'] . (intval($data['pricing'][$domanType]['register'][1]) + 10) . $data['currency']['code'] . '</span>';
                     $html .= '</div>';
                     echo json_encode(array(
